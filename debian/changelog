@@ -1,5 +1,39 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-termcolor (1.1.0-3) unstable; urgency=medium
 
-  * Initial release
+  [ Ondřej Nový ]
+  * d/control: Use team+openstack@tracker.debian.org as maintainer
+  * Use debhelper-compat instead of debian/compat.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #938212
+
+ -- Sandro Tosi <morph@debian.org>  Mon, 30 Mar 2020 10:11:00 -0400
+
+python-termcolor (1.1.0-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed homepage (https).
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Changed source URL to https protocol
+
+  [ Daniel Baumann ]
+  * Updating vcs fields.
+  * Updating copyright format url.
+  * Updating maintainer field.
+  * Running wrap-and-sort -bast.
+  * Removing gbp.conf, not used anymore or should be specified in the
+    developers dotfiles.
+
+  [ Thomas Goirand ]
+  * Add missin dh-python build-depends.
+  * Removed inactive uploaders.
+  * Remove dpkg pre-depends.
+  * Standards-Version is now 4.1.3.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 02 Apr 2018 17:37:34 +0200
+
+python-termcolor (1.1.0-1) unstable; urgency=low
+
+  * Initial release. (Closes: #717785)
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 25 Jul 2013 13:26:29 +0800
